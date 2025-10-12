@@ -7,3 +7,8 @@ def validate_last_name(last_name):
     if isinstance(last_name, str) and len(last_name) >= 3 and last_name.isalpha():
         return True
     return False
+
+def check_address(address):
+    if len(address) < 20:
+        return False
+    return True
